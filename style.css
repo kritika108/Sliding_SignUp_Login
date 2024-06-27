@@ -1,0 +1,211 @@
+        
+        body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .background-Right {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(
+          to right,
+          #8891e0,
+          rgba(222, 78, 124, 0.928)
+        );
+        background-size: cover;
+        background-position: 50% 50%;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .background-Left {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to right, #02a8a8, sandybrown);
+        background-size: cover;
+        background-position: 50% 50%;
+        color: rgb(154, 58, 58);
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -3;
+      }
+      #slide {
+        width: 50%;
+        max-height: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin-left: 50%;
+        position: absolute;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+      .top {
+        width: 200%;
+        height: 100%;
+        position: relative;
+        left: 0;
+        left: -100%;
+      }
+      .left {
+        width: 50%;
+        height: 100%;
+        background: lightsalmon;
+        left: 0;
+        position: absolute;
+      }
+      .right {
+        width: 50%;
+        height: 100%;
+        background: lightslategrey;
+        right: 0;
+        position: absolute;
+      }
+      .content {
+        width: 230px;
+        margin: 0 auto;
+        top: 30%;
+        position: relative;
+        left: 50%;
+        margin-left: -125px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+      }
+      .content h2 {
+        color: red;
+        font-size: 35px;
+      }
+      button {
+        background-color: hsl(248, 39%, 49%);
+        color: black;
+        width: auto;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      button:hover {
+        color: white;
+        background-color: black;
+      }
+      input[type="text"],
+      input[type="password"] {
+        padding-left: 36px;
+        padding-bottom: 10%;
+        padding-right: 12px;
+        margin: 8px 0;
+        display: flex;
+        border: 1px solid white;
+        box-sizing: border-box;
+        text-align: center;
+        width: 100%;
+        background-color: white;
+        color: black;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .on-off {
+        background: rgb(134, 173, 173);
+        color: #111211;
+        box-shadow: none;
+      }
+      .container {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+      }
+      .container p {
+        display: block;
+      }
+      .form-text {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+      }
+      .fa-spin:hover::before {
+        display: inline-block;
+        -webkit-animation: fa-spin 2s infinite linear;
+        animation: fa-spin 2s infinite linear;
+      }
+
+      @keyframes fa-spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      #instagram,
+      #telegram,
+      #github,
+      #facebook,
+      #linkedin {
+        background-color: #eaf6b0;
+        color: #f88d8d;
+        box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+          2px 2px 10px #00000080, 2px 2px 3px #00000080,
+          inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+          inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
+        border-radius: 29px;
+        padding: 11px 19px;
+        margin: 0 8px;
+        animation: animate 3s linear infinite;
+        text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+          0 0 200px #0072ff;
+        z-index: 111;
+        position: relative;
+      }
+
+      #telegram {
+        animation-delay: 0.3s;
+      }
+
+      #facebook {
+        animation-delay: 0.7s;
+      }
+
+      #github {
+        animation-delay: 0.1s;
+      }
+      #linkedin {
+        animation-delay: 0.2s;
+      }
+      @keyframes animate {
+        from {
+          filter: hue-rotate(0deg);
+        }
+
+        to {
+          filter: hue-rotate(360deg);
+        }
+      }
+  

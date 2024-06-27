@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="background">
+      <div class="background-Right">
+        <h1>Welcome</h1>
+        <p>
+          My self Kritika KumariPursing B.tech in Mechanical Engineering at
+          National Institute of Technology Patna.I made this slide using
+          Javascript ,HTML and CSS.
+        </p>
+        <h2>Connect With Me On</h2>
+        <div class="header__group-media_icons">
+          <a
+            class="header__group-icon"
+            href="https://www.facebook.com/kritika kumari"
+            rel="noopener"
+            target="_blank "
+            title="Facebook"
+            ><i
+              class="header__icon fab fa-facebook-square fa-spin"
+              id="facebook"
+            ></i
+          ></a>
+          <a
+            class="header__group-icon"
+            href="https://github.com/Kirt_ikritika"
+            rel="noopener"
+            target="_blank"
+            title="GitHub"
+            ><i
+              class="header__icon fab fa-github-square github fa-spin"
+              id="github"
+            ></i
+          ></a>
+          <a
+            class="header__group-icon"
+            href="https://www.instagram.com/Kirt_ikritika"
+            rel="noopener"
+            target="_blank"
+            title="Instagram"
+            ><i class="header__icon fab fa-instagram fa-spin" id="instagram"></i
+          ></a>
+          <a
+            class="header__group-icon"
+            href="https://www.t.me/Kirt_ikritika"
+            rel="noopener"
+            target="_blank"
+            ><i
+              class="header__icon fab fa-telegram-plane fa-spin"
+              id="telegram"
+              title="Telegram"
+              font
+            ></i
+          ></a>
+          <a
+            class="header__group-icon"
+            href="https://www.linkedin.com/in/kritika-kumari-2914a7241/"
+            rel="noopener"
+            target="_blank"
+            ><i
+              class="hheader_icon fab fa-linkedin fa-spin"
+              id="linkedin"
+              title="LinkeIn"
+            ></i
+          ></a>
+        </div>
+      </div>
+      <div class="background-Left">
+        <h1>Welcome</h1>
+        <p>
+          My self Kritika Kumari, Pursing B.tech in Mechanical Engineering at
+          National Institute of Technology Patna. I made this slide using
+          Javascript ,HTML and CSS.
+        </p>
+        <h2>Connect With Me On</h2>
+        <div class="header__group-media_icons">
+          <a
+            class="header__group-icon"
+            href="https://www.facebook.com/kritika kumari"
+            rel="noopener"
+            target="_blank "
+            title="Facebook"
+            ><i
+              class="header__icon fab fa-facebook-square fa-spin"
+              id="facebook"
+            ></i
+          ></a>
+          <a
+            class="header__group-icon"
+            href="https://github.com/Kirt_ikritika"
+            rel="noopener"
+            target="_blank"
+            title="GitHub"
+            ><i
+              class="header__icon fab fa-github-square github fa-spin"
+              id="github"
+            ></i
+          ></a>
+          <a
+            class="header__group-icon"
+            href="https://www.instagram.com/Kirt_ikritika"
+            rel="noopener"
+            target="_blank"
+            title="Instagram"
+            ><i class="header__icon fab fa-instagram fa-spin" id="instagram"></i
+          ></a>
+          <a
+            class="header__group-icon"
+            href="https://www.t.me/Kirt_ikritika"
+            rel="noopener"
+            target="_blank"
+            ><i
+              class="header__icon fab fa-telegram-plane fa-spin"
+              id="telegram"
+              title="Telegram"
+              font
+            ></i
+          ></a>
+          <a
+            class="header__group-icon"
+            href="https://www.linkedin.com/in/kritika-kumari-2914a7241/"
+            rel="noopener"
+            target="_blank"
+            ><i
+              class="hheader_icon fab fa-linkedin fa-spin"
+              id="linkedin"
+              title="LinkeIn"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="slide">
+      <div class="top">
+        <div class="right">
+          <div class="content">
+            <h2>Sign Up</h2>
+            <form id="register-form" method="post" onsubmit="return false;">
+              <div>
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  disabled
+                />
+                <label for="email">Email:</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email id"
+                  disabled
+                />
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputPassword6" class="col-form-label"
+                      >Password</label
+                    >
+                  </div>
+                  <div class="col-auto">
+                    <input
+                      type="password"
+                      id="inputPassword6"
+                      class="form-control"
+                      placeholder="Enter your password"
+                      aria-describedby="passwordHelpInline"
+                      disabled
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <span id="passwordHelpInline" class="form-text">
+                      Must be 8-20 characters long.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <button id="RightToLeft" class="on-off">Register</button>
+            </form>
+          </div>
+        </div>
+        <div class="left">
+          <div class="content">
+            <h2>Login</h2>
+            <form id="login-form" method="post" onsubmit="return false;">
+              <div>
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  disabled
+                />
+                <label for="email">Email:</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email id"
+                  disabled
+                />
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputPassword6" class="col-form-label"
+                      >Password</label
+                    >
+                  </div>
+                  <div class="col-auto">
+                    <input
+                      type="password"
+                      id="inputPassword6"
+                      class="form-control"
+                      placeholder="Enter your password"
+                      aria-describedby="passwordHelpInline"
+                      disabled
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <span id="passwordHelpInline" class="form-text">
+                      Must be 8-20 characters long.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <button id="LeftToRight" class="on-off">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
